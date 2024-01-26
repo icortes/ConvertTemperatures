@@ -30,35 +30,30 @@
 
  0 <= Celsius <= 1000
  */
-function convertTemperature(celsius){
+function convertTemperature(celsius) {
+  //create the array that will be returned
+    let arr = [];
 
-     //create the array that will be returned
-        let arr
+  //create variable to hold kelvin value
+  //convert Celsius to kelvin
+  // add it to the array
+  let kelvin = celsius + 273.15;
 
-    //create variable to hold kelvin value
-        //convert Celsius to kelvin
-        // add it to the array
-        let kelvin;
-        
-        arr.push();
+  arr.push(kelvin);
 
+  //create variable to hold Fahrenheit value
+  //convert Celsius to Fahrenheit
+  // add it to the array
 
+  fahrenheit = (celsius * 9.0) / 5.0 + 32.0;
 
-        //create variable to hold Fahrenheit value
-        //convert Celsius to Fahrenheit
-        // add it to the array
-       
-        fahrenheit = (1.80);
-        
+  arr.push(fahrenheit);
+  //return the ans array
+  return arr;
+}
 
+console.log(convertTemperature(150));
 
-        //return the ans array
-        return arr;
-
- }
-
- console.log(convertTemperature(150));
-
- // to run javascript you must first be in the correct folder
- //then you will type  " node 'nameOfFile.js' " in the console
- //Example: node ConvertTemperature.js
+// to run javascript you must first be in the correct folder
+//then you will type  " node 'nameOfFile.js' " in the console
+//Example: node ConvertTemperature.js
